@@ -3,10 +3,10 @@ Builds gate centered on XZ plane.
 
 ```matlab
 gateType = [0,0,0; % lower left corner X, Y, Z
-			0,0,1; % upper left corner
-			1,0,1; % upper right corner
-			1,0,0]*sideLength; % bottom right corner, all multiplied by scalar 
-							   % sideLength
+		0,0,1; % upper left corner
+		1,0,1; % upper right corner
+		1,0,0]*sideLength; % bottom right corner, all multiplied by scalar 
+						   % sideLength
 ```
 
 Creates a `gateType` with bottom left corner at the origin.
