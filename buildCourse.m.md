@@ -35,7 +35,7 @@ rotationMatrix = [cosd(theta) sind(theta) 0; % parametrically defined XYZ coords
 [matlab pi reference](https://www.mathworks.com/help/matlab/ref/pi.html)
 
 ### questions
-- [ ] `gateType` is 4x3, `rotationMatrix` is 3x3.  How does "multiplication" of multiplication between matrices of different dimensions
+- [ ] `gateType` is 4x3, `rotationMatrix` is 3x3.  How does "multiplication" between matrices of different dimensions work?
 
 ## figure(integer d)
 Calls a new empty window with title "Figure `d`"
