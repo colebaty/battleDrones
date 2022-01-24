@@ -15,23 +15,24 @@ gates(:,:,1) = gateType + [25,-10,sideLength/2 + 1]; % move gate right 25m, back
 gates(:,:,2) = gateType + [25,10,sideLength/2 + 1];
 ...
 gates(:,:,n) = gateType*rotateVector3(theta) + [25,50,sideLength/2 + 1];
-% rotate vector theta *degrees* normal to Z; 
-% recall that theta is measured from the x-axis along QI and QIV
-% and that a positive theta indicates anti-clockwise rotation
-% see 'rotationMatrix' below; 
-% move rotated gate right 25m, forward 50m, up...
+	% rotate vector theta *degrees* normal to Z; 
+	% recall that theta is measured from the x-axis along QI and QIV
+	% and that a positive theta indicates anti-clockwise rotation
+	% see 'rotationMatrix' below; 
+	% move rotated gate right 25m, forward 50m, up...
 ```
 
 ## rotationMatrix
 ```matlab
 rotationMatrix = [cosd(theta) sind(theta) 0; % parametrically defined XYZ coords
                  -sind(theta) cosd(theta) 0; % note that sind(theta) accepts degrees
-                  0           0			  1];% and sin(theta) accepts radians
-				  							 % pi may be called from anywhere 
-											 % within matlab as it is written 
-											 % here, e.g. sin(pi)
+                  0           0		  1];% and sin(theta) accepts radians
+				  	     % pi may be called from anywhere 
+					     % within matlab as it is written 
+					     % here, e.g. sin(pi)
 ```
 [matlab function reference](https://www.mathworks.com/help/matlab/referencelist.html?type=function)
+
 [matlab pi reference](https://www.mathworks.com/help/matlab/ref/pi.html)
 
 ### questions
