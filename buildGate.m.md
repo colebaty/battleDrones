@@ -11,6 +11,8 @@ gateType = [0,0,0; % lower left corner X, Y, Z
 
 Creates a `gateType` with bottom left corner at the origin.
 
+`gateType` is an "array" of vectors.
+
 -----
 
 ```matlab
