@@ -1,0 +1,1 @@
+The money shot.  Along with `estimateGateRange`
